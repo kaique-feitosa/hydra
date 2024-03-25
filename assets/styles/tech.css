@@ -1,0 +1,135 @@
+.tech__container {
+    margin-top: 2em;
+}
+
+.tech__banner {
+    position: relative;
+    background-image: url('../images/img-tech-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    width: 348px;
+    height: 163.35px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.tech__banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-fundo-img);
+    z-index: 1;
+}
+
+.tech__banner__titulo {
+    font-weight: bold;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.tech__banner__titulo span {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.tech__banner__botao {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 4.375em;
+    height: 4.375em;
+}
+
+.tech__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+    position: relative;
+}
+
+.tech__card {
+    display: none;
+}
+
+.tech__card img {
+    width: 174px;
+    height: 174px;
+}
+
+.tech__botao-esquerda {
+    position: absolute;
+    top: 37%;
+    left: 5%;
+}
+
+.tech__botao-direita {
+    position: absolute;
+    top: 37%;
+    right: 5%;
+}
+
+@media screen and (min-width: 1440px) {
+    .tech__container {
+        margin-top: 7.125em;
+    }
+
+    .tech__banner {
+        background-image: url('../images/img-tech.svg');
+        background-position: center;
+        width: 90%;
+        height: 303px;
+        border-radius: 160px;
+    }
+
+    .tech__banner__titulo {
+        font-size: 2.25rem;
+        line-height: 50px;
+    }
+
+    .tech__banner__titulo span {
+        font-size: 2.25rem;
+    }
+
+    .tech__banner__botao {
+        display: flex;
+        outline: 12px solid var(--borda-botoes);
+        position: absolute;
+        top: 228.5em;
+        left: 50%;
+        z-index: 2;
+    }
+
+    .tech__cards {
+        justify-content: space-evenly;
+    }
+
+    .tech__card {
+        display: flex;
+    }
+
+    .tech__card .unity {
+        width: 252px;
+        height: 252px;
+    }
+
+    .tech__card .oculos {
+        width: 263px;
+        height: 263px;
+    }
+
+    .tech__card .vive {
+        width: 282px;
+        height: 282px;
+    }
+}

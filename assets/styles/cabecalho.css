@@ -1,0 +1,361 @@
+/* NAVBAR DO CABEÇALHO */
+.cabecalho__container {
+    padding: 1em;
+}
+
+.cabecalho__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.cabecalho__logo {
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+}
+
+.logo-img {
+    width: 69px;
+    height: 59.88px;
+}
+
+.logo-nome {
+    width: 46px;
+    height: 28px;
+    margin-bottom: 8px;
+}
+
+.menu {
+    margin-bottom: .5em;
+}
+
+.menu-hamburguer {
+    background: transparent;
+}
+
+.menu-fechar {
+    background: transparent;
+    position: absolute;
+    top: 44px;
+    right: 16px;
+}
+
+.menu__lista {
+    display: none;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 12px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 2.25em .95em 0 0;
+}
+
+.menu__item {
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-right: .5em;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 1em 0;
+}
+
+.botao {
+    font-size: 0.6rem;
+    font-weight: bold;
+    padding: 0.9em;
+    text-transform: uppercase;
+    width: 9.7em;
+    text-align: center;
+}
+
+.botao__contact {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+}
+
+.botao__join {
+    background: var(--gradiente-left);
+    color: var(--texto-botao);
+    border-radius: 40px;
+    padding: 1em;
+}
+
+/* BANNER DO CABEÇALHO */
+.cabecalho__banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 0 3.5em 0;
+}
+.cabecalho__img {
+    width: 21.25em;
+    height: 18.5em;
+    outline: 14px solid var(--borda-img-vr);
+    border-radius: 100px 100px 100px 240px;
+    margin-bottom: 1.5em;
+}
+
+.cabecalho__banner__content {
+    text-align: center;
+}
+
+.cabecalho__banner__titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 40px;
+    padding-bottom: 1.5em;
+}
+
+.cabecalho__banner__titulo span {
+    font-size: 2rem;
+}
+
+.maior {
+    font-size: 2.25rem;
+}
+
+.cabecalho__banner__texto {
+    display: none;
+}
+
+.cabecalho__banner__img {
+    display: none;
+}
+
+.cabecalho__banner__botao {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--texto-botao);
+    background: var(--gradiente-left);
+    border-radius: 40px;
+    padding: 1.3em 2em;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.cabecalho__cards {
+    background: var(--gradiente-centro-banner);
+    border-radius: 90px;
+    padding: 1.2em 2.3em;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.cabecalho__cards__botao {
+    background: transparent;
+}
+
+.botao__banner-esquerda {
+    position: absolute;
+    left: 1.8em;
+    top: 56.4em;
+}
+
+.card {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__linha {
+    display: none;
+}
+
+.card__img {
+    width: 4.375em;
+    height: 4.375em;
+}
+
+.card__infos {
+    padding-left: .2em;
+}
+
+.card__titulo {
+    display: none;
+}
+
+.card__texto {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 20px;
+    width: 100%;
+}
+
+.botao__banner-direita {
+    position: absolute;
+    right: 1.8em;
+    top: 56.4em;
+}
+
+@media screen and (min-width: 1440px) {
+    /* NAVBAR DO CABEÇALHO */
+    .cabecalho__container {
+        padding: 0;
+    }
+
+    .cabecalho__navbar {
+        padding: 1em 5em;
+    }
+
+    .cabecalho__logo {
+        align-items: center;
+    }
+
+    .logo-img {
+        width: 102px;
+        height: 103px;
+    }
+
+    .logo-nome {
+        width: 75px;
+        height: 46px;
+    }
+
+    .menu {
+        align-self: center;
+    }
+
+    .menu__lista {
+        gap: 30px;
+        background-color: transparent;
+        position: static;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .menu-hamburguer {
+        display: none;
+    }
+
+    .menu__item {
+        font-size: .75rem;
+    }
+
+    .menu__item:hover {
+        color: rgba(192, 183, 232, 1);
+    }
+
+    .botoes {
+        flex-direction: row;
+        gap: 36px;
+        margin-left: 6em;
+    }
+
+    .botao {
+        font-size: .75rem;
+        padding: 1.5em 3em;
+        width: auto;
+    }
+
+    .botao:hover {
+        scale: 1.05;
+    }
+
+    /* BANNER DO CABEÇALHO */
+    .cabecalho__banner {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5em 5.25em 3.5em 5.25em;
+    }
+
+    .cabecalho__img {
+        width: 30.625em;
+        height: 26.625em;
+        outline: 21px solid var(--borda-img-vr);
+    }
+
+    .cabecalho__banner__titulo {
+        font-size: 2.5rem;
+        text-align: left;
+        line-height: 55px;
+        padding-bottom: 1em;
+        margin-top: 1.2em;
+    }
+
+    .cabecalho__banner__titulo span {
+        font-size: 2.875rem;
+    }
+
+    .cabecalho__banner__texto {
+        display: block;
+        text-align: justify;
+        line-height: 30px;
+        width: 60%;
+        margin-bottom: 1.5em;
+    }
+
+    .cabecalho__banner__link {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .cabecalho__banner__botao {
+        margin: 0;
+        width: 17vw;
+    }
+
+    .cabecalho__banner__botao:hover {
+        opacity: .8;
+        transition: .25s;
+    }
+
+    .cabecalho__banner__img {
+        display: block;
+    }
+
+    .cabecalho__cards {
+        display: flex;
+        justify-content: center;
+        padding: 1.5em 0;
+        margin-top: 2em;
+        width: 90%;
+    }
+
+    .cabecalho__cards__botao {
+        display: none;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5em 3em;
+    }
+
+    .card:not(.mostrar) {
+        border-left: 1px solid var(--borda-titulo);
+        padding-left: 47.5px;
+    }
+
+    .card__infos {
+        padding-left: 1em;
+    }
+
+    .card__titulo {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-bottom: .3em;
+    }
+}

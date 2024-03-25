@@ -1,0 +1,152 @@
+.rodape__lista__pag,
+.rodape__lista__servicos {
+    display: none;
+}
+
+.rodape__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape__logo {
+    width: 185px;
+    height: 187px;
+    margin-top: 4.5em;
+}
+
+.rodape__linha-lateral {
+    display: none;
+}
+
+.rodape__midias {
+    text-align: center;
+}
+
+.rodape__midias__titulo {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 3.5em 0 1.8em 0;
+}
+
+.rodape__midias__icone {
+    display: flex;
+    gap: 23px;
+    margin-bottom: 1em;
+}
+
+.rodape__midias__botao {
+    display: block;
+    background: var(--gradiente-left);
+    color: var(--texto-botao);
+    font-family: var(--fonte-principal);
+    font-size: .875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 40px;
+    padding: 1.2em 0;
+    margin: 1.875em 0 4.1em 0;
+}
+
+.rodape__linha {
+    background-image: linear-gradient(to right, #343045, #C0B7E8, #8176AF, #343045);
+    padding: .3px;
+    width: 85%;
+}
+
+.rodape__direitos {
+    font-size: .875rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 35px;
+    padding-top: 2.375em;
+    width: 65%;
+}
+
+@media screen and (min-width: 1440px) {
+    .rodape__container {
+        margin-top: 6.7em;
+    }
+
+    .rodape__links {
+        flex-direction: row;
+        margin-bottom: 4.5em;
+    }
+
+    .rodape__logo {
+        margin-top: 0;
+    }
+
+    .rodape__linha-lateral {
+        display: block;
+        background-image: linear-gradient(to top, #343045, #C0B7E8, #8176AF, #343045);
+        padding: .6px;
+        width: 5px;
+        height: 13em;
+        margin: 0 5.5em;
+    }
+
+    .rodape__lista__pag,
+    .rodape__lista__servicos {
+        display: block;
+    }
+
+    .rodape__lista__servicos {
+        margin-bottom: 2.5em;
+    }
+
+    .rodape__lista__pag li:not(:last-child),
+    .rodape__lista__servicos li:not(:last-child) {
+        padding-bottom: 1.5em;
+    }
+
+    .servico,
+    .pagina {
+        color: #FFFFFF;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .servico:hover,
+    .pagina:hover {
+        text-decoration: underline;
+    }
+
+    .rodape__midias {
+        text-align: left;
+    }
+
+    .rodape__midias__titulo {
+        padding: 0;
+    }
+
+    .rodape__midias__icone {
+        margin: 2.8em 0;
+    }
+
+    .icone:hover {
+        transform: scale(1.07);
+    }
+
+    .rodape__midias__botao {
+        text-align: center;
+        margin: 0;
+        width: 70%;
+    }
+
+    .rodape__midias__botao:hover {
+        opacity: .8;
+        transition: .25s;
+    }
+
+    .rodape__direitos {
+        padding: 0;
+        margin: 3.375em 0;
+    }
+}

@@ -1,0 +1,134 @@
+.join__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--gradiente-centro-cards);
+    border-radius: 40px;
+    padding-top: 2.8em;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.join__titulo,
+.join__subtitulo {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.join__titulo {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.join__linha {
+    background-image: linear-gradient(to right, #343045, #C0B7E8, #8176AF, #343045);
+    padding: .3px;
+    margin: 1.5em 0;
+    width: 35%;
+}
+
+.join__subtitulo {
+    font-weight: 200;
+    line-height: 35px;
+    margin-bottom: 1.5em;
+}
+
+.join__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 90%;
+}
+
+.join__formulario__input {
+    background: transparent;
+    border: 2px solid #FFF;
+    border-radius: 40px;
+    padding: 1.5em 0;
+}
+
+.join__formulario__input::placeholder {
+    color: #FFF;
+    font-family: var(--fonte-principal);
+    font-size: .875rem;
+    padding-left: 1.8em;
+}
+
+.join__formulario--mais {
+    height: 219px;
+}
+
+.join__botao {
+    align-self: center;
+    background: var(--gradiente-left);
+    color: var(--texto-botao);
+    font-family: var(--fonte-principal);
+    font-size: .875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 40px;
+    padding: 1.2em 0;
+    margin: 1.875em 0 4.1em 0;
+    width: 92%;
+}
+
+@media screen and (min-width: 1440px) {
+    .join__container {
+        margin-top: 7.375em;
+        padding-bottom: 5em;
+        border-radius: 100px;
+    }
+
+    .join__titulo,
+    .join__subtitulo {
+        font-size: 2.25rem;
+        text-align: center;
+    }
+
+    .join__titulo {
+        padding-top: 1em;
+    }
+
+    .join__subtitulo br {
+        display: none;
+    }
+
+    .join__linha {
+        margin: 1.875em 0;
+    }
+
+    .join__formulario {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        column-gap: 10px;
+        row-gap: 33px;
+        width: 80%;
+    }
+
+    .join__formulario__input {
+        padding: 1.75em 0;
+    }
+
+    .join__formulario__input::placeholder {
+        padding-left: 2.625em;
+    }
+    
+    .join__formulario--assunto {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+
+    .join__formulario--mais {
+        grid-area: 4 / 1 / 5 / 3;
+    }
+
+    .join__botao {
+        width: 20%;
+    }
+
+    .join__botao:hover {
+        cursor: pointer;
+        opacity: .8;
+        transition: .25s;
+    }
+}

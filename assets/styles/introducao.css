@@ -1,0 +1,149 @@
+/* INTRODUÇÃO */
+.introducao__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.introducao__conteudo__titulo {
+    font-size: 1.625rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+
+.introducao__conteudo__titulo span {
+    font-weight: 200;
+}
+
+.introducao__conteudo__img,
+.introducao__conteudo__texto {
+    display: none;
+}
+
+/* ABOUT */
+.introducao-about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.introducao-about__texto {
+    font-size: .75rem;
+    line-height: 23px;
+    padding: 2.5em 2em;
+}
+
+.introducao-about__conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introducao-about__titulo {
+    display: none;
+}
+
+.introducao-about__botao {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--texto-botao);
+    background: var(--gradiente-left);
+    border-radius: 40px;
+    padding: 1.3em 2em;
+    width: 65vw;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1440px) {
+    .introducao__container {
+        margin-top: 5.6875em;
+    }
+
+    .introducao__conteudo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .introducao__conteudo__cabecalho {
+        display: flex;
+    }
+
+    .introducao__conteudo__titulo {
+        font-size: 2.25em;
+        text-align: left;
+        line-height: 50px;
+    }
+
+    .introducao__conteudo__img {
+        display: inline-block;
+        width: 228px;
+        height: 100px;
+        position: absolute;
+        top: 68.3em;
+        left: 22em;
+    }
+
+    .introducao__conteudo__texto {
+        display: block;
+        line-height: 25px;
+        width: 45%;
+        margin-left: 13em;
+    }
+
+    /* ABOUT */
+    .introducao-about__container {
+        flex-direction: row;
+        margin: 4em 0 0 5.25em;
+        padding: 0;
+    }
+
+    .introducao-about__img {
+        display: block;
+        width: 32.75em;
+        height: 34.8125em;
+        margin-right: 7.375em
+    }
+
+    .introducao-about__conteudo {
+        align-items: flex-start;
+        margin-bottom: 3em;
+    }
+
+    .introducao-about__titulo {
+        display: block;
+        font-size: 2.25rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 50px;
+    }
+
+    .introducao-about__titulo span {
+        font-weight: 200;
+    }
+
+    .introducao-about__texto {
+        width: 87%;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 30px;
+        padding: 2em 0 1.5em 0;
+    }
+
+    .introducao-about__botao {
+        width: 33%;
+        margin: 0;
+    }
+
+    .introducao-about__botao:hover {
+        opacity: .8;
+        transition: .25s;
+    }
+}

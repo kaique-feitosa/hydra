@@ -1,0 +1,141 @@
+.progresso__container {
+    margin-top: 3em;
+}
+
+.progresso__titulo {
+    font-size: 1.625rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+}
+
+.progresso__titulo span {
+    font-weight: 200;
+}
+
+.titulo__img {
+    display: none;
+}
+
+.progresso__img {
+    display: none;
+}
+
+.progresso__texto {
+    display: none;
+}
+
+.progresso__cards {
+    margin-top: 3em;
+}
+
+.progresso__card {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.progresso__botao-esquerda {
+    position: absolute;
+    top: 243.5em;
+    left: 5%;
+}
+
+.progresso__botao-direita {
+    position: absolute;
+    top: 243.5em;
+    right: 5%;
+}
+
+.progresso__card__circulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradiente-left);
+    color: var(--texto-botao);
+    font-size: 4em;
+    font-weight: bold;
+    outline: 18px solid rgba(13, 13, 13, 0.32);
+    border-radius: 50%;
+    width: 159px;
+    height: 159px;
+}
+
+.progresso__card__img {
+    display: none;
+}
+
+.progresso__card__titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    padding: 1.5em 4em;
+}
+
+@media screen and (min-width: 1440px) {
+    .progresso__container {
+        margin-top: 4.3125em;
+    }
+    
+    .progresso__conteudo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 4.5em;
+    }
+
+    .progresso__titulo__container {
+        display: flex;
+    }
+
+    .progresso__titulo {
+        font-size: 2.25rem;
+        text-align: left;
+        line-height: 55px;
+    }
+
+    .progresso__img {
+        display: block;
+        position: absolute;
+        top: 218.5em;
+        left: 26em;
+    }
+
+    .progresso__texto {
+        display: block;
+        width: 50%;
+        line-height: 25px;
+    }
+
+    .progresso__cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 6em;
+    }
+
+    .progresso__card {
+        display: flex;
+        gap: 50px;
+        width: 23%;
+    }
+
+    .progresso__card__conteudo {
+        display: flex;
+        width: 80%;
+    }
+    
+    .progresso__card__img {
+        display: block;
+        align-self: flex-end;
+    }
+    
+    .progresso__card__titulo {
+        padding: 0;
+        text-align: left;
+    }
+}
